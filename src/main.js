@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import VueRouter from 'vue-router'
+import './styles/index.less'
+Vue.use(VueRouter)
 
-Vue.config.productionTip = false
+const routes = []
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+const router = new VueRouter({
+  routes
+})
+
+export default router
